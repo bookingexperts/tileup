@@ -22,12 +22,12 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_development_dependency 'bundler', '~> 1.13'
-  spec.add_development_dependency 'rake', '~> 10.0'
-  spec.add_development_dependency 'minitest', '~> 5.10'
-  spec.add_development_dependency 'pry'
+  spec.add_development_dependency 'bundler'
+  spec.add_development_dependency 'rake'
+  spec.add_development_dependency 'minitest'
+  spec.add_development_dependency 'debug'
   spec.add_development_dependency 'mocha'
 
-  spec.add_development_dependency 'rmagick', '~> 2.16'
-  spec.add_development_dependency 'mini_magick', '~> 4.7'
+  spec.add_development_dependency 'rmagick', '~> 6.0'
+  spec.add_development_dependency 'mini_magick', '~> 5.0'
 end
