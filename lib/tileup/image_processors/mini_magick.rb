@@ -31,7 +31,7 @@ module TileUp
       def crop_and_save_image image, crop, filename:, extend_crop: false, extend_color: 'none'
         logger.verbose "Saving tile: #{crop[:column]}, #{crop[:row]}..."
 
-        ::MiniMagick::Tool::Convert.new do |convert|
+        ::MiniMagick.convert do |convert|
           convert << mpc(image).path
           convert.merge! ['-crop', "#{crop[:width]}x#{crop[:height]}+#{crop[:x]}+#{crop[:y]}"]
 
