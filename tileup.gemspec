@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'tileup/version'
 
 Gem::Specification.new do |spec|
-  spec.name        = 'moiristo-tileup'
+  spec.name        = 'bookingexperts-tileup'
   spec.version     = TileUp::VERSION
   spec.authors     = ['Reinier de Lange']
   spec.email       = 'rein@bookingexperts.nl'
