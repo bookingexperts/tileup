@@ -30,4 +30,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency 'rmagick', '~> 6.0'
   spec.add_development_dependency 'mini_magick', '~> 5.0'
+  spec.add_development_dependency 'ruby-vips', '~> 2.0'
 end

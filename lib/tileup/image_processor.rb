@@ -5,6 +5,7 @@ module TileUp
     def self.build(processor, logger)
       case processor
       when 'mini_magick' then TileUp::ImageProcessors::MiniMagick.new(logger)
+      when 'vips' then TileUp::ImageProcessors::Vips.new(logger)
       else TileUp::ImageProcessors::RMagick.new(logger)
       end
     end
